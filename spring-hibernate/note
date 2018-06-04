@@ -1,0 +1,15 @@
+此项目是一个spring IOC的简单实例
+一、创建简单实例的流程
+1、加入5个必须的jar包，分别是logging context core expression beans
+2、src文件下创建spring的配置文件applicationcontext.xml
+3、需要创建一个bean。   
+   （*写set get方法    因为要通过配置文件给对象赋值）
+4、applicationcontext.xml中配置bean信息。
+     ①、spring创建的类与javabean所创建的类进行绑定；
+     ②、并且在spring所创建类给属性赋值。
+5、测试框架的搭建。
+   二、说明：
+      IOC和DI是是对同一事件的不同描述形式。
+     ①IOC：控制反转。是从容器的角度出发的，不用手动new来创建对象，而是将对象的创建交给spring。
+	 ②Dl：依赖注入。是从应用程序的角度而言的，spring创建的对象注入到我们本来的类中。
+三、spring整合hibernate的过程
